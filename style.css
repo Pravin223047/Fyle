@@ -1,0 +1,657 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  font-family: "Poppins", sans-serif;
+  background: #f3f3f5;
+  scroll-behavior: smooth;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Home */
+.home {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home .container {
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.home .container .text-containers {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.home .container .text-containers .h4-title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #ff3147;
+  text-transform: uppercase;
+}
+
+.home .container .text-containers .h1-title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.home .container .text-containers .paragraph-text {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.home .container .text-containers .btn {
+  padding: 6px;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #ff3147;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  height: 3rem;
+  width: 180px;
+}
+
+.home .container .image-container {
+  border-radius: 5px;
+}
+
+.home .container .image-container img {
+  border-radius: 5px;
+}
+
+/* About Container*/
+
+.about {
+  width: 100%;
+  display: flex;
+  margin: 70px 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.about .container {
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.about .container .h4-title {
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #ff3147;
+}
+
+.about .container .text-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.about .container .text-container .h2-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.about .container .text-container .paragraph-text {
+  font-size: 1rem;
+  font-weight: 500;
+  width: 70%;
+}
+
+.about .container .sliding-container {
+  max-width: 1200px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.about .container .sliding-container .image-container {
+  max-width: 1200px;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.about .container .sliding-container .image-container .card {
+  position: relative;
+  min-width: 380px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.about .container .sliding-container .image-container .card .card-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.about .container .sliding-container .image-container .card .card-body {
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  bottom: 0;
+  position: absolute;
+  background: #ff3147;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 5px 12px;
+  transition: 1s;
+}
+
+.about .container .sliding-container .image-container .card:hover .card-body {
+  top: 0;
+}
+
+.about
+  .container
+  .sliding-container
+  .image-container
+  .card
+  .card-body
+  .icon-img {
+  width: 50px;
+}
+
+.about
+  .container
+  .sliding-container
+  .image-container
+  .card
+  .card-body
+  .h3-title {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.about
+  .container
+  .sliding-container
+  .image-container
+  .card
+  .card-body
+  .paragraph-text {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.about .container .sliding-container .image-container .card .card-body .btn-a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 40px;
+  border-radius: 5px;
+  background: #fff;
+  gap: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #ff3147;
+}
+
+.about .container .sliding-container .dot-slide {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .container .sliding-container .dot-slide .dot {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+}
+
+.about .container .sliding-container .dot-slide .dot img {
+  cursor: pointer;
+}
+
+/* Choose Container */
+
+.choose {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin: 70px 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.choose .container {
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 40px;
+  margin: 20px 0;
+}
+
+.choose .container .heading {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.choose .container .heading .span {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #ff3147;
+}
+
+.choose .container .heading .h2-title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.choose .container .boxcontainer {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.choose .container .boxcontainer .about-container {
+  text-align: left;
+}
+
+.choose .container .boxcontainer .about-container h3 {
+  margin: 20px 0;
+}
+
+.choose .container .imagecontainers {
+  width: 100%;
+  display: flex;
+  gap: 40px;
+}
+
+.choose .container .imagecontainers .imagecontainer {
+  width: 100%;
+  height: 500px;
+  border-radius: 8px;
+}
+
+.choose .container .imagecontainers .imagecontainer img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.choose .container .imagecontainers .imagetextcontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.choose .container .imagecontainers .imagetextcontainer .boxcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #dfdede;
+  padding: 15px;
+  border-radius: 8px;
+  color: #000;
+  width: 400px;
+  height: 155px;
+  cursor: pointer;
+}
+
+.choose
+  .container
+  .imagecontainers
+  .imagetextcontainer
+  .boxcontainer
+  .h3-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.choose
+  .container
+  .imagecontainers
+  .imagetextcontainer
+  .boxcontainer
+  .paragraph-text {
+  font-size: 1rem;
+}
+
+.choose .container .imagecontainers .imagetextcontainer .boxcontainer:hover,
+.choose .container .imagecontainers .imagetextcontainer .boxcontainer.active {
+  color: #ffffff;
+  background-color: #ff3147;
+}
+
+.growth {
+  height: 100%;
+}
+.growth .container {
+  height: 600px;
+  width: 100%;
+  background: #e6e5e5;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.growth .container .heading {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.growth .container .containers {
+  display: flex;
+  margin: 30px 10px;
+  gap: 40px;
+  padding: 10px;
+}
+
+.growth .container .containers .containerbox {
+  background-color: #fff;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 250px;
+}
+
+.growth .container .containers .containerbox:hover {
+  box-shadow: 5px 5px 10px 10px #c0c0c0;
+}
+
+.growth .container .containers .containerbox h2 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+.growth .container .heading .span {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #ff3147;
+}
+
+.growth .container .heading .h2-title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+footer {
+  width: 100%;
+  height: 280px;
+  display: flex;
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: #f52843;
+}
+
+footer img {
+  width: 70%;
+}
+
+.feedback {
+  height: 100%;
+  margin: 70px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feedback .container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.feedback .container .heading {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feedback .container .heading .span {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #ff3147;
+}
+
+.feedback .container .heading .h2-title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.feedback .container .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-image: url(/Quotemarks-left.svg);
+  background-repeat: no-repeat;
+  width: 900px;
+  background-size: 8%;
+  background-position-x: 2px;
+  text-align: left;
+  background-position-y: 6px;
+  justify-content: start;
+  align-items: start;
+}
+
+.feedback .container .content p {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.feedback .container .content h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #f52843;
+  color: #808080;
+}
+
+.feedback .container .content h3 span {
+  color: #f52843;
+  font-weight: 600;
+}
+#contactPopup {
+  display: none;
+}
+
+.popup {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+  z-index: 99;
+  backdrop-filter: blur(10px); /* Apply blur effect to the background */
+}
+
+.popup .container {
+  position: relative;
+  padding: 25px;
+  z-index: 999;
+  margin: 20px;
+  flex-direction: column;
+  background-color: #fff;
+  width: 500px;
+  height: 400px;
+  opacity: 1;
+  gap: 20px;
+  filter: none; /* Ensure the container itself is not blurred */
+}
+
+.popup .container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.popup .container .box input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  height: 40px;
+  border-bottom: 1px solid gray;
+}
+
+.popup .container .inputbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.popup .container .inputbox .input-field {
+  width: 100%;
+  border: none;
+  height: 40px;
+  padding: 8px;
+  border-bottom: 1px solid gray;
+}
+
+.popup .container .heading {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popup .container .heading h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.popup .container .heading button {
+  display: flex;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup .container .heading button img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.popup .container form .boxy {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.popup .container form .boxy label {
+  font-size: 1rem;
+}
+
+.popup .container form .boxy label::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #ff3366;
+  border-radius: 5px;
+  margin-right: 10px;
+  vertical-align: middle;
+  background-color: white;
+  cursor: pointer;
+}
+
+.popup .container form .boxy input[type="checkbox"] {
+  margin-right: 10px;
+  display: none;
+}
+.popup .container form .boxy input[type="checkbox"]:checked + label::before {
+  background-color: #ff5b5b;
+  border-color: #ff5b5b;
+  content: "✓";
+  color: white;
+  text-align: center;
+  line-height: 20px;
+}
+
+.popup .container form button {
+  margin-top: 20px;
+  padding: 15px 141px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #ff3366;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
