@@ -848,6 +848,7 @@ footer .paragraph-text {
     align-items: center;
     justify-content: center;
     text-align: center;
+     padding:15px;
   }
 
   footer img {
