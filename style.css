@@ -133,12 +133,15 @@ section {
 
 .about .container .sliding-container {
   max-width: 1200px;
-  overflow: hidden;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 25px;
+}
+
+.about .container .sliding-container .slider-wrapper {
+  overflow: hidden;
 }
 
 .about .container .sliding-container .image-container {
@@ -495,7 +498,7 @@ footer .paragraph-text {
   align-items: center;
   flex-direction: column;
   padding: 20px;
-  background-image: url(Quotemarks-left.svg);
+  background-image: url(/Quotemarks-left.svg);
   background-repeat: no-repeat;
   width: 900px;
   background-size: 8%;
@@ -729,9 +732,6 @@ footer .paragraph-text {
 }
 
 @media screen and (max-width: 886px) {
-  .about .container .sliding-container {
-    overflow: hidden;
-  }
   .about .container .text-container .h2-title {
     font-size: 2rem;
     font-weight: 500;
