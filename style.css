@@ -842,6 +842,14 @@ footer .paragraph-text {
     max-width: 320px;
   }
 
+   footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
   footer img {
     display: none;
   }
